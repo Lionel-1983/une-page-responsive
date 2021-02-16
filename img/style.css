@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+html {font-size: 100%}
+body {
+	font:0.625em Verdana, Geneva, sans-serif;
+}
+
+img {
+	max-width:100%;
+}
+.wrapper {
+	margin:0 auto;
+	padding:0;
+	width:100%;
+	padding: 5%;
+}
+
+.main-header {
+	text-align:center;
+	background-image: url('img/bkg.jpg');
+	background-position: top center;
+	background-size:cover; 
+}
+
+.main-header h1 {
+	font-size:4.8em;
+	font-weight:700;
+	margin:10px;
+}
+/*<<<<<<<<<<< début bouton d'ouverture du menu*************/
+.open  {
+	position: absolute;
+	top: 2vh;
+	left: 2vw;
+	color: #000;
+	font-size: 1.2em;
+	border: 0.1em solid;
+	text-decoration: none;
+	padding: 0.2em 0.4em;
+	background: #fff;
+}
+
+.open:hover {
+	background:rgba(230,230,230,0.7);
+	color:#f71058;
+}
+
+
+ul,li {
+	list-style:none;
+	text-align:left;
+}
+
+.main-nav ul {
+	margin:0;
+}
+
+.main-nav li {
+	border:0.136em solid #ddd;
+	border-top:none;
+}
+
+.main-nav li:first-child {
+	border-top:0.136em solid #ddd;
+}
+
+.main-nav a {
+	color:orange;
+	display:block;
+	font-size:1.81em;
+	padding:0.272em 0.68em;
+	text-decoration:none;
+}
+
+.main-nav a:hover {
+	background-color:orange;
+	color:#ddd;
+	text-decoration:none;
+}
+.menu-plein-ecran {
+	background-color: hsla(182.4, 32.2%, 45.7%, 0.5);
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:60%;
+	display: none;
+	padding: 4em  2em 1em 2em;
+
+}
+.content-menu {
+	display: block;
+	vertical-align: middle;
+	padding: 1em;
+}
+.menu-plein-ecran:target {
+	display: block;
+}
+.menu-plein-ecran .close {
+	position: absolute;
+	top:1%;
+	right: 1%;
+}
+.main-menu {
+	display: block;
+	padding: 2em;
+	margin:1em;
+	border:1px solid #fff;
+	background-color: hsla(0, 3%, 6.5%, 0.3);
+}
+
+.item > a {
+	color:#fff;
+}
+
+.item a {
+	padding: 0.2em;
+	font-size: 1.1em;
+	display:block;
+	text-decoration: none;
+}
+.item  a:hover { 
+	color:#f44336;
+}
+
+.main {
+	border-right:0.136em solid .000;
+}
+
+.edito {
+	background:#ddd;
+	padding:2em 1em;
+}
+.edito h1{
+	font-size: 2.05em;
+}
+.edito p {
+	color:.d33;
+	font-size: 1.4em
+}
+
+.edito .date {
+	color:.555;
+}
+
+.specialites article {
+	border-top:.3em dotted #ddd;
+	padding:1em;
+	position:relative;
+}
+
+.specialites article:after {
+	clear:both;
+	content:"";
+	display:block;
+}
+
+.specialites h1 {
+	font-size:2.04em;
+	margin-bottom:.35em;
+}	
+
+.specialites p {
+	font-size:1.4em;
+	line-height: 1.2em;
+	margin-bottom:2.5em;
+}
+
+.specialites figure {
+	float:left;
+	margin:0 1em 1em 0;
+	min-width:100px;
+	width:20%;
+}
+
+.specialites img {
+	box-shadow:2px 2px 2px .222;
+}
+
+.specialites .more {
+	background-color:#ddd;
+	border-radius:0.1em;
+	bottom:1em;
+	box-shadow:0.1em 0.1em 0.1em;
+	color:red;
+	display:block;
+	margin-top:.5em;
+	padding:.5em 1em;
+	position:absolute;
+	right:1.5em;
+	text-align:right;
+	text-decoration:none;
+}
+.specialites .more {display:block;text-align:right;margin-top:0.5em}
+.specialites .more:hover {
+	background-color:red;
+	color:#ddd;
+}
+
+.specialites:after {
+	clear:both;
+	content:"";
+	display:block;
+}
+
+.specialites .auteur {
+	display:none;
+}
+
+.agenda {
+	background:.eee;
+	border-top:thin solid .666;
+	padding:1em;
+}
+
+.agenda img {
+	display:none;
+}
+
+.agenda h1 {
+	border-left:1em solid;
+	color:red;
+	font-size:2.38em;
+	margin-bottom:0.5em;
+	padding:1em;
+}
+
+.agenda figcaption {
+	border-bottom:0.1em dotted .d00;
+	font:1.564em/1.575em Verdana, Geneva, sans-serif;
+	padding-left:1.75em;
+}
+
+footer {
+	background:red;
+	padding:1em;
+}
+
+footer a {
+	border-left:1em solid #ededed;
+	color:#ededed;
+	font:1.75em/1.55 arial;
+	padding-left:.75em;
+	text-decoration:none;
+}
+
+footer a:hover {
+	border-color:.333;
+	color:.333;
+}
+
+
+@media screen and (min-width: 755px) {
+	.global {
+		border:0.1em solid .666;
+	}
+
+	.main-nav {
+		margin:0 auto;
+		width:90%;
+	}
+
+	.main-nav li {
+		color:.FF0;
+		float:left;
+		text-align:center;
+		width:24%;
+		border-top:0.1em solid #ddd;
+		border-bottom:none;
+		border-left:none;
+	}
+
+	.main-nav li:first-child {
+		border-left:0.1em solid #ddd;;
+	}
+
+	.main-nav a {
+		color:orange;
+		padding:0.2em;
+	}
+
+	.edito {
+		background:url(img/bandeau-01.png) no-repeat top center;
+	}
+
+	.edito h1 {
+		background-color:rgba(80%,80%,80%,0.7);
+		padding: 0.1em 0.7em;
+		width: 42%;
+	}
+
+	.edito p {
+		background-color:rgba(80%,80%,80%,0.9);
+		font-weight:700;
+		padding:.3em 1em;
+		width:35%;
+	}
+
+	.spcialites h1 {
+		height:30%;
+	}
+
+	.specialites {
+		border-collapse:collapse;
+		display:table;
+		table-layout:fixed;
+		width:100%;
+	}
+	/*on place .specialités en display:table avec table-layout:;
+	fixed pour réaliser un positionnement en mode tableau*/
+
+	.specialites article {
+		border-top:none;
+		display:table-cell;
+		position:relative;
+		vertical-align:top;
+		width:33%;
+	}
+	/*deuxième partie du positionnement distributif
+	dispaly:table-cell
+	il faut également indiquer une largeur égale ou
+	supérieure au tiers 	(faîtes des essais)
+	*/
+
+	.specialites figure {
+		margin:0;
+		padding:2%;
+		width:96%;
+	}
+
+	.specialites img {
+		box-shadow:0 0 0 .222;
+	}
+
+	.specialites .description {
+		padding:4%;
+	}
+
+	.agenda {
+		overflow:hidden;
+	}
+
+	.agenda img {
+		display:block;
+	}
+
+	.items {
+		display:table;
+		table-layout:fixed;
+		width:100%;
+	}
+
+	.agenda figure {
+		display:table-cell;
+		padding:0 0.3em;
+		position:relative;
+	}
+
+	.agenda figcaption {
+		background-color:rgba(0%,0%,0%,0.8);
+		box-sizing:border-box;
+		color:.fff;
+		display:none;
+		font-size:1.36em;
+		font-weight:700;
+		height:100%;
+		padding:20% 5%;
+		position:absolute;
+		text-align:center;
+		top:0;
+	}
+
+	/*
+	Pour distribuer les images, j'ai utilisé table-cell sur figure
+	et table sur le parent (.items).
+
+	On stylise ensuite figcaption afin qu'il fasse la même hauteur
+	que son parent (figcaption en absolute, figure en relative)
+	Pour ne pas être embêté par les paddings qui s'ajoutent
+	au calcule de la taille de la boîte de figcaption, et rendent
+	délicat la superposition exacte sans modification du html, on 
+	utilise box-sizing:border-box. Dès lors le calcul de la boîte se fait
+	uniquement sur width et height, sans tenir compte des padding et des border, 
+	magique, non.
+	*/
+	.agenda figure:hover figcaption {
+		display:block;
+	}
+	
+	footer a {
+		display: block;
+		float: left;
+		margin-bottom: 0.2em;
+		margin-left: 1em;
+		min-width: 26%;
+	}
+
+	.item:after,nav:after,footer ul:after,.content:after {
+		clear:both;
+		content:"";
+		display:block;
+	}
+
+	footer ul {
+		margin:0;
+		width:96%;
+	}
+}
+
+@media screen and (min-width: 955px) {
+	
+	.edito h1 {
+		background-color:rgba(80%,80%,80%,0.7);
+
+		width:35%;
+	}
+
+	.specialites {
+		background:url(img/fond-2000.png) 75.15% top repeat-y;
+	}
+
+	.specialites .auteur {
+		display:table-cell;
+	}
+}
